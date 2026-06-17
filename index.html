@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranav Rai | IT Infrastructure & Support Portfolio</title>
+  <meta name="description" content="Professional portfolio of Pranav Rai, specializing in IT Infrastructure, Systems Administration, Network Monitoring, and Automation.">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <!-- Glowing Background Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-terminal">&gt;_</span>
+        <span class="logo-text">Pranav<span>Rai</span></span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#dashboard" class="nav-link">Console</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certificates" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle Light/Dark Theme">
+          <!-- Sun Icon (for dark mode) -->
+          <svg class="icon sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+          <!-- Moon Icon (for light mode) -->
+          <svg class="icon moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuToggle" class="btn-icon mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <svg class="icon hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-text-block">
+          <div class="badge-role">
+            <span class="badge-dot"></span>
+            <span>IT Infrastructure & Support Specialist</span>
+          </div>
+          <h1 class="hero-title">
+            I build, monitor, and automate <span class="highlight-text">resilient IT systems</span>.
+          </h1>
+          <p class="hero-subtitle">
+            Instrumentation & Control Engineering graduate with a Minor in Computer Science. Specialized in automated system monitoring, network administration, troubleshooting, and cloud integrations.
+          </p>
+          <div class="hero-ctas">
+            <a href="#dashboard" class="btn btn-primary">
+              <span>View Dashboard Console</span>
+              <svg class="btn-icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-tertiary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual-block">
+          <!-- Terminal Window -->
+          <div class="terminal-mock">
+            <div class="terminal-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">pranav@infra-node:~</span>
+            </div>
+            <div class="terminal-body font-mono">
+              <p class="terminal-line"><span class="cmd-prompt">pranav@infra-node:~$</span> ssh production-server-cluster</p>
+              <p class="terminal-line text-muted">Connecting to cluster at 10.24.12.100...</p>
+              <p class="terminal-line text-green">✓ Connection established via SSH-RSA-2048</p>
+              <p class="terminal-line"><span class="cmd-prompt">pranav@production-server:~$</span> ./check_health.sh</p>
+              <p class="terminal-line text-muted">[INFRA] Running diagnostic checks...</p>
+              <p class="terminal-line text-green">● GCP Cloud Load Balancer: ONLINE</p>
+              <p class="terminal-line text-green">● IoT Gateway & Smart Sensors: RESPONDING</p>
+              <p class="terminal-line text-green">● Database Clusters: HEALTHY (Sync complete)</p>
+              <p class="terminal-line text-yellow">! Warning: Network latency peak at AP-South-1 (78ms)</p>
+              <p class="terminal-line"><span class="cmd-prompt">pranav@production-server:~$</span> <span class="cursor-blink">|</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <h2 class="section-title">Systems & Infrastructure Background</h2>
+        <div class="about-grid">
+          
+          <div class="about-card card-glass">
+            <div class="card-icon-wrap">
+              <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3>Education & Credentials</h3>
+            <p class="school-name">Bharati Vidyapeeth College of Engineering</p>
+            <p class="degree-info">B.Tech in Instrumentation & Control Engineering (Minor in Computer Science)</p>
+            <p class="timeline-text">Nov 2022 — Jun 2026</p>
+            <p class="card-desc">
+              Gained deep knowledge in Process Control Systems, Industrial Instrumentation, Sensors, PLC/SCADA configurations, coupled with Data Structures, Algorithms, and Software Engineering.
+            </p>
+          </div>
+
+          <div class="about-card card-glass">
+            <div class="card-icon-wrap">
+              <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+              </svg>
+            </div>
+            <h3>IoT Smart Fencing Project</h3>
+            <p class="school-name">Intrusion Detection & Alerting</p>
+            <p class="degree-info">ESP32-CAM, PIR Sensors & APIs</p>
+            <p class="timeline-text">Jan 2026 — May 2026</p>
+            <p class="card-desc">
+              Designed a real-time network alert system. Configured Wi-Fi routing client-server logic and automated Telegram Bot APIs to dispatch video alerts in under 4.7 seconds with a 98% success rate.
+            </p>
+          </div>
+
+          <div class="about-card card-glass">
+            <div class="card-icon-wrap">
+              <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3>C++ Logic & Data Structures</h3>
+            <p class="school-name">Advanced Technical Training</p>
+            <p class="degree-info">Algorithms, Complexity & Scripting</p>
+            <p class="timeline-text">Jul 2024 — Aug 2024</p>
+            <p class="card-desc">
+              Completed rigorous programmatic and algorithmic logic training. Strengthened logic troubleshooting, data structures operations, memory models, and complexity optimizations using C++.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- IT Dashboard Simulation Section -->
+    <section class="section dashboard-section" id="dashboard">
+      <div class="container">
+        <div class="section-header-wrap">
+          <h2 class="section-title">Infrastructure Monitoring Console</h2>
+          <p class="section-desc">An interactive simulation demonstrating real-time server health metrics, automated alert tickets, and a data-packet network route optimizer.</p>
+        </div>
+
+        <div class="dashboard-grid">
+          
+          <!-- Column 1: Live Status Metrics -->
+          <div class="dash-panel card-glass">
+            <div class="panel-header">
+              <svg class="panel-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+              <h4>Cluster Health Status</h4>
+              <span class="pulse-indicator"></span>
+            </div>
+            <div class="panel-body">
+              
+              <div class="metric-card">
+                <span class="metric-label">Server Latency</span>
+                <div class="metric-value-row">
+                  <span class="metric-val" id="metricLatency">45ms</span>
+                  <span class="metric-trend text-green" id="trendLatency">Stable</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill fill-blue" id="barLatency" style="width: 45%;"></div>
+                </div>
+              </div>
+
+              <div class="metric-card">
+                <span class="metric-label">CPU System Load</span>
+                <div class="metric-value-row">
+                  <span class="metric-val" id="metricCpu">24%</span>
+                  <span class="metric-trend text-green" id="trendCpu">Nominal</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill fill-green" id="barCpu" style="width: 24%;"></div>
+                </div>
+              </div>
+
+              <div class="metric-card">
+                <span class="metric-label">Active Connections</span>
+                <div class="metric-value-row">
+                  <span class="metric-val" id="metricConnections">1,482</span>
+                  <span class="metric-trend text-green">+4.2%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill fill-cyan" style="width: 65%;"></div>
+                </div>
+              </div>
+
+              <div class="console-mini font-mono">
+                <div class="console-log-line">&gt; Node health: 99.8% uptime</div>
+                <div class="console-log-line">&gt; API Gateway routing checks: OK</div>
+                <div class="console-log-line text-green">&gt; Log listener online (Listening port 514)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Route Visualizer -->
+          <div class="dash-panel card-glass">
+            <div class="panel-header">
+              <svg class="panel-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+              <h4>Route Optimizer Simulator</h4>
+              <button class="btn btn-tiny font-mono" id="btnRecalculate">Recalculate Route</button>
+            </div>
+            <div class="panel-body canvas-container">
+              <canvas id="routeCanvas" width="340" height="210"></canvas>
+              <div class="route-caption font-mono text-muted text-center" id="routeText">
+                Dijkstra: Source (S) -> A -> C -> Destination (D) [cost: 12]
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Incident Ticket Queue -->
+          <div class="dash-panel card-glass">
+            <div class="panel-header">
+              <svg class="panel-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+              <h4>Active Incident Log Queue</h4>
+              <span class="ticket-count" id="ticketCount">1</span>
+            </div>
+            <div class="panel-body flex-column justify-between h-full">
+              <div class="ticket-list" id="ticketList">
+                
+                <!-- Sample Ticket -->
+                <div class="ticket-item ticket-critical" id="ticket1">
+                  <div class="ticket-meta">
+                    <span class="ticket-status-dot critical"></span>
+                    <span class="ticket-id font-mono">INC-0284</span>
+                    <span class="ticket-time font-mono">Just Now</span>
+                  </div>
+                  <div class="ticket-title">High Packet Loss on Router IP 192.168.10.4</div>
+                  <div class="ticket-actions">
+                    <button class="btn btn-tiny btn-action" onclick="resolveTicket(1)">Deploy Network Patch</button>
+                  </div>
+                </div>
+
+              </div>
+              
+              <!-- Console Logs output when patches deploy -->
+              <div class="terminal-log-output font-mono" id="terminalLogOutput">
+                <p class="console-output-line text-muted">[SYSTEM] Welcome to Pranav's Diagnostics console.</p>
+                <p class="console-output-line text-muted">[SYSTEM] Click "Deploy Network Patch" to resolve critical tickets.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skill Matrix</h2>
+        <div class="skills-grid">
+          
+          <!-- Card 1: IT Systems & Administration -->
+          <div class="skills-card card-glass">
+            <div class="skills-category-header">
+              <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 012-2h2a2 2 0 012 2m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+              <h3>Systems & Infrastructure</h3>
+            </div>
+            <ul class="skills-list font-mono">
+              <li>
+                <span>GCP Cloud Services</span>
+                <span class="skill-level-indicator level-high">High</span>
+              </li>
+              <li>
+                <span>Firebase & Firestore</span>
+                <span class="skill-level-indicator level-high">High</span>
+              </li>
+              <li>
+                <span>Linux & Unix administration</span>
+                <span class="skill-level-indicator level-medium">Medium</span>
+              </li>
+              <li>
+                <span>Windows Server Basics</span>
+                <span class="skill-level-indicator level-medium">Medium</span>
+              </li>
+              <li>
+                <span>Storage & Database Systems</span>
+                <span class="skill-level-indicator level-high">High</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Network & Control Engineering -->
+          <div class="skills-card card-glass">
+            <div class="skills-category-header">
+              <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              <h3>Networks & IoT Control</h3>
+            </div>
+            <ul class="skills-list font-mono">
+              <li>
+                <span>Process Control Systems</span>
+                <span class="skill-level-indicator level-high">Advanced</span>
+              </li>
+              <li>
+                <span>PLC & SCADA concepts</span>
+                <span class="skill-level-indicator level-high">Advanced</span>
+              </li>
+              <li>
+                <span>Wi-Fi & ESP32-CAM config</span>
+                <span class="skill-level-indicator level-high">Advanced</span>
+              </li>
+              <li>
+                <span>Client-Server Communications</span>
+                <span class="skill-level-indicator level-high">Advanced</span>
+              </li>
+              <li>
+                <span>Sensors & Data Transducers</span>
+                <span class="skill-level-indicator level-high">Advanced</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Automation & Software -->
+          <div class="skills-card card-glass">
+            <div class="skills-category-header">
+              <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+              <h3>Automation & Software</h3>
+            </div>
+            <ul class="skills-list font-mono">
+              <li>
+                <span>Python & Bash Scripting</span>
+                <span class="skill-level-indicator level-high">Advanced</span>
+              </li>
+              <li>
+                <span>FastAPI & REST APIs</span>
+                <span class="skill-level-indicator level-high">Advanced</span>
+              </li>
+              <li>
+                <span>C++ & Core Data Structures</span>
+                <span class="skill-level-indicator level-medium">Medium</span>
+              </li>
+              <li>
+                <span>OAuth & Authentication</span>
+                <span class="skill-level-indicator level-medium">Medium</span>
+              </li>
+              <li>
+                <span>HTML, CSS, JavaScript, React</span>
+                <span class="skill-level-indicator level-high">Advanced</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Developer Tools -->
+          <div class="skills-card card-glass">
+            <div class="skills-category-header">
+              <svg class="skills-cat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+              </svg>
+              <h3>Developer & Support Tools</h3>
+            </div>
+            <ul class="skills-list font-mono">
+              <li>
+                <span>Git Version Control</span>
+                <span class="skill-level-indicator level-high">Proficient</span>
+              </li>
+              <li>
+                <span>GitHub Repositories</span>
+                <span class="skill-level-indicator level-high">Proficient</span>
+              </li>
+              <li>
+                <span>VS Code & Dev Environment</span>
+                <span class="skill-level-indicator level-high">Proficient</span>
+              </li>
+              <li>
+                <span>Log Analysis (Panda, NumPy)</span>
+                <span class="skill-level-indicator level-medium">Medium</span>
+              </li>
+              <li>
+                <span>Telegram Bot API Alerting</span>
+                <span class="skill-level-indicator level-high">Proficient</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header-wrap flex-row-responsive justify-between align-end">
+          <div>
+            <h2 class="section-title">IT Automation & Software Projects</h2>
+            <p class="section-desc">A selection of engineering and development projects demonstrating systems, automation, and core software capabilities.</p>
+          </div>
+          
+          <!-- Projects Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">All Projects</button>
+            <button class="tab-btn" data-filter="automation">Automation & IoT</button>
+            <button class="tab-btn" data-filter="software">Software Dev</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Smart Crop Fencing -->
+          <div class="project-card card-glass" data-category="automation">
+            <div class="project-img-placeholder">
+              <svg class="project-vector-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+              <div class="project-category-badge">Automation & IoT</div>
+            </div>
+            <div class="project-body">
+              <h3>IoT Smart Fencing for Intrusion Detection</h3>
+              <p class="project-date">Jan 2026 — May 2026</p>
+              <p class="project-desc">
+                Designed and built a hardware-software system using ESP32-CAM, Arduino Uno, and PIR sensors. Configured Wi-Fi communication networks, client-server connections, and Telegram Bot API for real-time video snapshots and push notifications.
+              </p>
+              <div class="project-metrics">
+                <div class="metric-badge">96% Intrusion Detection Accuracy</div>
+                <div class="metric-badge">4.7s Avg Push Alert Delivery</div>
+              </div>
+              <div class="project-tech-tags font-mono">
+                <span>ESP32-CAM</span>
+                <span>Arduino</span>
+                <span>Wi-Fi Network</span>
+                <span>APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Synapse EdTech -->
+          <div class="project-card card-glass" data-category="software">
+            <div class="project-img-placeholder">
+              <svg class="project-vector-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+              <div class="project-category-badge">Software Dev</div>
+            </div>
+            <div class="project-body">
+              <h3>Synapse AI Study Platform</h3>
+              <p class="project-date">Oct 2025</p>
+              <p class="project-desc">
+                Built a full-stack educational study site helper that leverages Gemini AI. Features automated summary compilations, interactive flashcards, and testing quizzes. Integrated clean API requests, styling structures, and routing rules.
+              </p>
+              <div class="project-metrics">
+                <div class="metric-badge">Gemini API Integration</div>
+                <div class="metric-badge">React & Tailwind</div>
+              </div>
+              <div class="project-tech-tags font-mono">
+                <span>React</span>
+                <span>FastAPI</span>
+                <span>Gemini API</span>
+                <span>Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Jarvina AI -->
+          <div class="project-card card-glass" data-category="software">
+            <div class="project-img-placeholder">
+              <svg class="project-vector-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+              </svg>
+              <div class="project-category-badge">Software Dev</div>
+            </div>
+            <div class="project-body">
+              <h3>Jarvina Knowledgeable Chatbot</h3>
+              <p class="project-date">Aug 2025</p>
+              <p class="project-desc">
+                Created an automated diagnostic AI assistant using Python, FastAPI, and OAuth workflows. Handles token authorizations, security headers, request processing, and connects to LLM nodes for knowledge checks.
+              </p>
+              <div class="project-metrics">
+                <div class="metric-badge">Secure OAuth Authentication</div>
+                <div class="metric-badge">REST API Design</div>
+              </div>
+              <div class="project-tech-tags font-mono">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>OAuth 2.0</span>
+                <span>REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Path Finder Game -->
+          <div class="project-card card-glass" data-category="software">
+            <div class="project-img-placeholder">
+              <svg class="project-vector-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+              <div class="project-category-badge">Software Dev</div>
+            </div>
+            <div class="project-body">
+              <h3>Network Path Visualizer</h3>
+              <p class="project-date">Feb 2025</p>
+              <p class="project-desc">
+                Developed an interactive network pathfinder in the browser to map data routing. Allows plotting custom node networks and obstacles, executing Dijkstra and A* algorithms to compute the shortest routing path in real time.
+              </p>
+              <div class="project-metrics">
+                <div class="metric-badge">Dijkstra & A* Implementations</div>
+                <div class="metric-badge">Interactive Canvas Rendering</div>
+              </div>
+              <div class="project-tech-tags font-mono">
+                <span>JavaScript</span>
+                <span>HTML5 Canvas</span>
+                <span>Algorithms</span>
+                <span>CSS Grid</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Certifications -->
+    <section class="section certificates-section" id="certificates">
+      <div class="container">
+        <h2 class="section-title">Certifications & Professional Recognition</h2>
+        <div class="certificates-grid">
+          
+          <div class="certificate-card card-glass">
+            <div class="cert-icon-wrap">
+              <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <h3>Techudhyam 7.0 Seminar & Competition</h3>
+              <p class="cert-meta">National Project Competition</p>
+              <p class="cert-badge-text">Secured 3rd Position</p>
+              <p class="cert-desc">Awarded for engineering project execution, demonstrating technical design maturity, system logic structure, and functional execution before a panel of experts.</p>
+            </div>
+          </div>
+
+          <div class="certificate-card card-glass">
+            <div class="cert-icon-wrap">
+              <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <h3>Technovation 4.0 Project Showcase</h3>
+              <p class="cert-meta">Inter-Department Project Competition</p>
+              <p class="cert-badge-text">Winner Certificate (2025)</p>
+              <p class="cert-desc">Acknowledged for technical innovation and project assembly, demonstrating software integration with hardware systems.</p>
+            </div>
+          </div>
+
+          <div class="certificate-card card-glass">
+            <div class="cert-icon-wrap">
+              <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <h3>PLC-Based Industrial Process Control</h3>
+              <p class="cert-meta">ISA Collaboration Certification</p>
+              <p class="cert-badge-text">Short-Term Technical Course</p>
+              <p class="cert-desc">Completed specialized training on Programmable Logic Controllers (PLCs), system ladder logic, configuration inputs, control networks, and SCADA systems monitoring.</p>
+            </div>
+          </div>
+
+          <div class="certificate-card card-glass">
+            <div class="cert-icon-wrap">
+              <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <div class="cert-body">
+              <h3>Introduction to Industrial Automation</h3>
+              <p class="cert-meta">System Administration & Engineering Course</p>
+              <p class="cert-badge-text">Short-Term Course Completion</p>
+              <p class="cert-desc">Focusing on automated process control loops, signal transducers, industrial networking routing interfaces, and remote control troubleshooting.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          
+          <!-- Contact Info Column -->
+          <div class="contact-info-block">
+            <h3>Let's discuss infrastructure opportunities</h3>
+            <p class="contact-intro">
+              I am actively seeking roles in **IT Support, IT Infrastructure Engineering, and Systems Administration**. If you are looking for an engineer who understands systems, scripting, and networking, let's connect!
+            </p>
+            
+            <div class="contact-details">
+              
+              <div class="contact-detail-item">
+                <div class="detail-icon-wrap">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="detail-label">Email Address</span>
+                  <a href="mailto:Pranavguru079@gmail.com" class="detail-val">Pranavguru079@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon-wrap">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="detail-label">Phone Connection</span>
+                  <a href="tel:+917053298146" class="detail-val">+91 7053298146</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon-wrap">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="detail-label">Location</span>
+                  <span class="detail-val">New Delhi, India</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-wrap">
+              <a href="https://github.com/Pranavrai207" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                <!-- Github Custom Icon path -->
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/pranav-rai-ice" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                <!-- LinkedIn Custom Icon path -->
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-block card-glass">
+            <form id="contactForm">
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Your Name</label>
+                  <input type="text" id="contactName" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address</label>
+                  <input type="email" id="contactEmail" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactCompany">Company / Organization</label>
+                <input type="text" id="contactCompany" placeholder="MNC Corp / Consulting Ltd">
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <input type="text" id="contactSubject" placeholder="Infrastructure / Support Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="5" placeholder="Hi Pranav, we reviewed your infrastructure dashboard and resume. Let's schedule a call..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full justify-center" id="btnSubmitContact">
+                <span>Send Message to Pranav</span>
+                <svg class="btn-icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+              </button>
+
+              <div class="form-status font-mono" id="formStatus"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="copyright-text">&copy; 2026 Pranav Rai. Tailored for IT Infrastructure & Support Excellence.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#dashboard">Console</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="index.js"></script>
+</body>
+</html>
